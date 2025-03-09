@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Tradutor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tradutor</h1>
+        <div class="texto">
+            <textarea id="fromTexto" placeholder="Digite um texto..."></textarea>
+            <textarea id="toTexto" readonly placeholder="Tradução..."></textarea>
+        </div>
+        <div class="controlo">
+            <div class="fromControlo">
+                <select id="idiomaOrigem"> </select>
+                <i id="from" class='bx bx-volume-full'></i>
+                <i id="from" class='bx bx-copy'></i>
+            </div>
+            <i id="exchange" class="fas fa-exchange"></i>
+            <div class="toControlo">
+                <i id="to" class='bx bx-volume-full'></i>
+                <i id="to" class='bx bx-copy'></i>
+                <select id="idiomaDestino"></select>
+            </div>
+        </div>
+        <button class="traduzir">Traduzir</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
